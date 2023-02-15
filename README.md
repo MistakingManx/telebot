@@ -386,15 +386,11 @@ Use this method to send a group of photos or videos as an album. (Min. 2)
 
 Use this method to send audio files, if you want Telegram clients to display the file as a playable voice message.
 
-##### `sendLocation(<chat_id>, [<latitude>, <longitude>], {replyToMessage, replyMarkup, notification})`
+##### `sendLocation(<chat_id>, [<latitude>, <longitude>], {replyToMessage, replyMarkup, notification, livePeriod})`
 
 Use this method to send point on the map.
 
-##### `sendLocation(<chat_id>, [<latitude>, <longitude>], {replyToMessage, replyMarkup, notification})`
-
-Use this method to send point on the map.
-
-##### `editMessageLiveLocation({chatId + messageId | inlineMessageId, latitude, longitude}, {replyMarkup})`
+##### `editMessageLiveLocation({chatId, messageId | inlineMessageId, latitude, longitude}, {replyMarkup})`
 
 Use this method to edit live location messages sent by the bot or via the bot (for inline bots). A location can be edited until its live_period expires or editing is explicitly disabled by a call to stopMessageLiveLocation.
 
